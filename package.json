@@ -1,0 +1,18 @@
+{
+  "name": "table-talk",
+  "version": "1.0.0",
+  "description": "questions to promote conversation",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mocha": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
