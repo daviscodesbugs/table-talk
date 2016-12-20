@@ -1,0 +1,36 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: lightslategray;
+}
+
+.center {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    /*width:30em !important;*/
+    /*height:30em !important;*/
+    margin-top: -150px;
+    /*set to a negative number 1/2 of your height*/
+    margin-left: -150px;
+    /*set to a negative number 1/2 of your width*/
+    /*border: 1px solid #ccc;*/
+    /*background-color: #f3f3f3;*/
+}
+
+.square-300 {
+    width: 300px !important;
+    height: 300px !important;
+}
+
+.card-content-container {
+    padding: 16px;
+    width: 268px;
+    height: 269px;
+    display: table;
+}
+
+.card-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
