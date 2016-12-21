@@ -1,6 +1,7 @@
 body {
     font-family: "Roboto", Arial, sans-serif;
     background-color: lightslategray;
+    overflow-x: hidden;
 }
 
 .center {
@@ -9,6 +10,21 @@ body {
     left: 50%;
     margin-top: -150px;
     margin-left: -150px;
+}
+
+.slide-wrapper {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+.slide-wrapper.off-bottom {
+    transition-timing-function: ease-out;
+    transform: translate(0%,400%);
+    -webkit-transform: translate(0%,400%);
+}
+.slide-wrapper.off-top {
+    transition-timing-function: ease-in;
+    transform: translate(0%,-400%);
+    -webkit-transform: translate(0%,-400%);
 }
 
 .square-300 {
@@ -40,4 +56,12 @@ body {
 
 .row .col {
     padding: 0px !important;
+}
+
+.no-highlight {
+    user-select: none;
+}
+
+.pointer {
+    cursor: pointer;
 }
