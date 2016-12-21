@@ -7,14 +7,8 @@ body {
     position:fixed;
     top: 50%;
     left: 50%;
-    /*width:30em !important;*/
-    /*height:30em !important;*/
     margin-top: -150px;
-    /*set to a negative number 1/2 of your height*/
     margin-left: -150px;
-    /*set to a negative number 1/2 of your width*/
-    /*border: 1px solid #ccc;*/
-    /*background-color: #f3f3f3;*/
 }
 
 .square-300 {
@@ -23,7 +17,7 @@ body {
 }
 
 .card-content-container {
-    padding: 16px;
+    /*padding: 16px;*/
     width: 268px;
     height: 269px;
     display: table;
@@ -33,4 +27,17 @@ body {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+}
+
+.card-panel {
+    margin: 0px !important;
+    padding: 16px !important;
+}
+
+.row {
+    margin-bottom: 0px !important;
+}
+
+.row .col {
+    padding: 0px !important;
 }
