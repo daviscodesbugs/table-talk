@@ -1,6 +1,15 @@
 var app = angular.module("myApp", []);
 
 app.controller('myCtrl', function ($scope, $http) {
+	$http({
+		method: 'GET',
+		url: 'https://raw.githubusercontent.com/daviscodesbugs/table-talk/master/src/cards.json'
+	}).then(function success(res) {
+		$scope.setList = res.data.list;
+	}, function error(res) {
+		alert('Couldn\'t get set list');
+	});
+ 
     $scope.test = "Family";
 
     $scope.questions = [];
